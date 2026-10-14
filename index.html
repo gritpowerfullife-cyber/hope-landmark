@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>최지은 | 희망랜드마크</title>
+<meta name="description" content="희망랜드마크 대표 최지은 · 아이들이 스스로 가능성을 발견하는 꿈찾기 포럼 · 최지은 진로입시코칭">
+<meta property="og:title" content="최지은 | 희망랜드마크">
+<meta property="og:description" content="아이들이 스스로 가능성을 발견하도록 돕습니다. 꿈찾기 포럼 · 진로·학습·입시 컨설팅">
+<meta property="og:image" content="img/profile-main.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f2; --card:#ffffff; --ink:#1f2430; --sub:#5b6170; --line:#ebe5dc;
+  --accent:#c8423b; --accent-soft:#fbeceb; --navy:#23314d; --gold:#d9a441;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#e9e4dc;color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:520px;margin:0 auto;background:var(--bg);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.08)}
+a{color:inherit}
+img{display:block;max-width:100%}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.brand{font-weight:900;font-size:15px;letter-spacing:-.3px}
+.brand span{color:var(--accent)}
+.lang{display:flex;gap:4px}
+.lang button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--sub);font-family:inherit}
+.lang button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* hero */
+.hero{position:relative}
+.hero img{width:100%;aspect-ratio:4/3.4;object-fit:cover;object-position:50% 20%}
+.hero-text{padding:24px 20px 28px;background:var(--card);margin:-48px 16px 0;position:relative;border-radius:18px;box-shadow:0 10px 30px rgba(35,49,77,.12);text-align:center}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:32px;line-height:1.2;letter-spacing:-1px}
+.hero .role{color:var(--sub);font-size:14px;margin-top:6px}
+.hero .en{font-size:12px;color:#9aa0ab;letter-spacing:1px;margin-top:2px}
+.hero .lead{margin-top:16px;font-size:15px;font-weight:500;color:var(--navy);word-break:keep-all}
+.quick{display:flex;gap:8px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--line)}
+
+/* sections */
+section{padding:44px 20px 8px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--accent)}
+h2{font-family:'Noto Serif KR',serif;font-size:24px;line-height:1.35;margin:6px 0 16px;letter-spacing:-.5px;word-break:keep-all}
+p{color:#3a4050;font-size:15px;word-break:keep-all}
+p+p{margin-top:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card+.card{margin-top:12px}
+.card h3{font-size:16px;margin-bottom:6px;color:var(--navy);word-break:keep-all}
+.card p{font-size:14px}
+
+/* journey chips */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.chips span{font-size:13px;background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px;color:var(--navy)}
+
+/* program */
+.program{background:linear-gradient(160deg,#fff7f0,#fff);border:1px solid #f1dccf;border-radius:20px;padding:22px 18px}
+.program .pname{font-size:13px;font-weight:700;color:var(--accent)}
+.steps{margin-top:18px;display:grid;gap:10px}
+.step{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px;border:1px solid var(--line)}
+.step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+.step:nth-child(2) .n{background:#d8703f}
+.step:nth-child(3) .n{background:var(--gold)}
+.step h3{font-size:15px;margin-bottom:2px}
+.step p{font-size:13.5px}
+
+/* donate */
+.donate{background:var(--navy);color:#fff;border-radius:20px;padding:24px 20px}
+.donate h2{color:#fff}
+.donate p{color:#d8dce6}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:6px;margin:18px 0;text-align:center}
+.flow div{background:rgba(255,255,255,.08);border-radius:12px;padding:12px 6px;font-size:12.5px;line-height:1.4;word-break:keep-all}
+.flow b{display:block;font-size:18px;margin-bottom:4px}
+.flow i{font-style:normal;color:var(--gold)}
+.amount{display:flex;gap:8px;margin:6px 0 18px;flex-wrap:wrap}
+.amount span{background:rgba(255,255,255,.12);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
+.donate .btn{background:var(--gold);color:var(--navy)}
+
+/* consulting */
+ul.list{list-style:none;display:grid;gap:8px;margin-top:14px}
+ul.list li{position:relative;padding-left:20px;font-size:14.5px;color:#3a4050;word-break:keep-all}
+ul.list li::before{content:"";position:absolute;left:4px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.badge-row span{font-size:12.5px;font-weight:700;color:var(--navy);background:#eef1f7;padding:5px 12px;border-radius:8px}
+
+/* referral */
+.ref{display:flex;gap:14px;align-items:flex-start}
+.ref .num{font-family:'Noto Serif KR',serif;font-size:28px;color:var(--accent);line-height:1}
+
+/* gallery */
+.gallery{position:relative;border-radius:16px;overflow:hidden;background:#000}
+.track{display:flex;transition:transform .45s ease}
+.slide{min-width:100%;position:relative}
+.slide img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.slide .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:13px}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:none;background:rgba(255,255,255,.85);font-size:20px;cursor:pointer;color:var(--navy)}
+.nav.prev{left:10px}.nav.next{right:10px}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+.dots i{width:7px;height:7px;border-radius:50%;background:#d3ccc1;cursor:pointer}
+.dots i.on{background:var(--accent);width:18px;border-radius:4px}
+
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:18px;display:grid;gap:18px}
+.tl div{position:relative}
+.tl div::before{content:"";position:absolute;left:-25px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--accent)}
+.tl small{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:1px}
+.tl h3{font-size:15.5px;color:var(--navy);word-break:keep-all}
+.tl p{font-size:13.5px}
+
+/* contact */
+.contact{display:grid;gap:10px}
+.contact a,.contact div.c{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none}
+.contact .ic{font-size:20px;width:28px;text-align:center}
+.contact small{display:block;font-size:12px;color:var(--sub)}
+.contact strong{font-size:15px;color:var(--ink);word-break:break-all}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.actions .btn{justify-content:center;padding:14px}
+footer{text-align:center;padding:40px 20px 50px;color:var(--sub);font-size:12.5px}
+footer b{display:block;color:var(--ink);font-size:14px;margin-bottom:4px}
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:50}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (max-width:360px){.hero h1{font-size:28px}.flow{grid-template-columns:1fr;}.flow i{transform:rotate(90deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">희망<span>랜드마크</span></div>
+  <div class="lang">
+    <button data-lang="ko" class="on">한국어</button>
+    <button data-lang="en">EN</button>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="img/profile-main.jpg" alt="최지은 대표">
+  <div class="hero-text">
+    <span class="tag" data-i="tag">희망커넥트 부설 · 희망랜드마크</span>
+    <h1 data-i="name">최지은</h1>
+    <div class="role" data-i="role">대표 · 진로·학습·입시 컨설턴트</div>
+    <div class="en">CHOI JI-EUN</div>
+    <p class="lead" data-i="lead">아이들이 스스로 자기 안의 가능성을 발견하도록,<br>성장을 막는 것들을 함께 걷어냅니다.</p>
+    <div class="quick">
+      <a class="btn primary" href="tel:01054440088" data-i="call">📞 상담 전화</a>
+      <a class="btn ghost" href="#forum" data-i="seeProgram">프로그램 보기</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="eyebrow">ABOUT</div>
+  <h2 data-i="aboutTitle">아이는 이미 답을 가지고 있습니다.<br>다만 아직 발견하지 못했을 뿐입니다.</h2>
+  <p data-i="about1">신문사·잡지사 기자로 사람을 만났고, 다큐멘터리를 만들어 EBS에 소개했습니다. 그리고 20년 넘게 진로·학습·입시 현장에서 수많은 아이들과 학부모를 만나왔습니다.</p>
+  <p data-i="about2">그 시간 동안 확신하게 된 것이 있습니다. 아이를 바꾸는 건 더 많은 정보가 아니라, 스스로 '나는 할 수 있다'를 발견하는 경험이라는 것. 희망랜드마크는 그 발견의 자리를 만듭니다.</p>
+  <div class="chips">
+    <span data-i="c1">📰 기자</span><span data-i="c2">🎬 다큐멘터리 제작</span><span data-i="c4">🎓 입시 컨설턴트</span><span data-i="c5">⛺ 캠프 디렉터</span><span data-i="c6">✍️ 작가</span>
+  </div>
+</section>
+
+<section id="forum">
+  <div class="eyebrow">PROGRAM 01</div>
+  <h2 data-i="forumTitle">희망랜드마크 꿈찾기 포럼</h2>
+  <div class="program">
+    <div class="pname" data-i="forumFor">어린이 · 청소년 대상</div>
+    <p data-i="forumDesc">정답을 가르치는 수업이 아닙니다. 대화와 질문, 활동을 통해 아이가 지금의 자신을 들여다보고, 스스로 꿈과 가능성을 발견하도록 돕는 포럼입니다.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3 data-i="s1t">지금의 나를 체크합니다</h3><p data-i="s1d">감정, 습관, 관계, 공부. 아이가 지금 어디에 서 있는지 함께 들여다봅니다.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3 data-i="s2t">성장을 막는 요소를 찾습니다</h3><p data-i="s2d">"난 원래 안 돼", "어차피 못 해". 아이를 붙잡고 있는 생각과 패턴을 스스로 알아차립니다.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3 data-i="s3t">방해 요소를 점점 옅어지게 합니다</h3><p data-i="s3d">알아차린 것은 힘을 잃습니다. 그 빈자리에 아이가 진짜 원하는 꿈과 가능성이 들어섭니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="donate">
+    <div class="eyebrow" style="color:var(--gold)">HOW TO JOIN</div>
+    <h2 data-i="joinTitle">기부로 참여하는 포럼</h2>
+    <p data-i="joinDesc">희망랜드마크는 사단법인 희망커넥트의 부설기관입니다. 희망커넥트에 기부하신 가정의 자녀는 꿈찾기 포럼에 부담 없는 비용으로 참여할 수 있습니다.</p>
+    <div class="flow">
+      <div><b>💛</b><span data-i="f1">희망커넥트에 기부</span></div><i>→</i>
+      <div><b>📝</b><span data-i="f2">자녀 참가 신청</span></div><i>→</i>
+      <div><b>🌱</b><span data-i="f3">꿈찾기 포럼 참여</span></div>
+    </div>
+    <p style="font-size:13px" data-i="amountLabel">기부금은 자율입니다</p>
+    <div class="amount"><span data-i="a1">3만원</span><span data-i="a2">5만원</span><span data-i="a3">자율 금액</span></div>
+    <a class="btn" href="http://hopeconnect.kr/?act=board&bbs_code=sub5_1" target="_blank" rel="noopener" data-i="joinBtn">희망커넥트 바로가기 →</a>
+  </div>
+</section>
+
+<section id="consulting">
+  <div class="eyebrow">PROGRAM 02</div>
+  <h2 data-i="conTitle">최지은 진로입시코칭<br><small style="font-size:15px;color:var(--sub);font-family:'Noto Sans KR'">진로 · 학습 · 입시 1:1 코칭</small></h2>
+  <p data-i="conDesc">현실을 읽고, 방향을 다시 맞춥니다. 무조건 높은 목표도, 성적만 보고 가능성을 닫는 것도 아닌, 학생이 실제로 걸어갈 수 있는 길을 함께 설계합니다.</p>
+  <ul class="list">
+    <li data-i="l1">학생의 성향과 현재 학습 상태 진단</li>
+    <li data-i="l2">진로와 학업 방향의 장기적인 설계</li>
+    <li data-i="l3">학생부와 교과·비교과 활동 점검</li>
+    <li data-i="l4">대학·전형 선택 및 수시 지원 전략</li>
+    <li data-i="l5">자기주도학습 습관과 실행 관리</li>
+    <li data-i="l6">학부모 상담과 입시 정보 제공</li>
+  </ul>
+  <div class="badge-row"><span data-i="b1">20년+ 현장 경력</span><span data-i="b2">서울대·연세대·고려대 합격 다수</span><span data-i="b3">수시 전문</span></div>
+</section>
+
+<section id="why">
+  <div class="eyebrow">WHY ME</div>
+  <h2 data-i="whyTitle">왜 최지은인가</h2>
+  <div class="card"><h3 data-i="w1t">① 다양한 삶을 살아본 코치</h3><p data-i="w1d">기자, 다큐멘터리 PD, 작가, 캠프 디렉터. 한 길만 걸어온 사람은 보여줄 수 없는 '여러 갈래의 길'을 아이들에게 직접 보여줍니다.</p></div>
+  <div class="card"><h3 data-i="w2t">② 수많은 캠프로 증명된 현장 경험</h3><p data-i="w2d">중앙일보 공부의신 캠프, 청소년경제포럼 기자캠프, CJ 진로캠프 등 셀 수 없이 많은 캠프를 진행하며 실제로 아이들을 만나 왔습니다.</p></div>
+  <div class="card"><h3 data-i="w3t">③ 프로그램을 직접 설계하는 사람</h3><p data-i="w3d">남이 만든 교안을 전달하지 않습니다. 아이들의 반응을 보며 프로그램을 직접 기획하고 다듬어 왔습니다.</p></div>
+</section>
+
+<section id="referral">
+  <div class="eyebrow">REFERRAL</div>
+  <h2 data-i="refTitle">이런 분을 소개해 주세요</h2>
+  <div class="card ref"><div class="num">1</div><p data-i="r1">아이의 진로, 자존감, 공부 습관이 고민인 초·중·고 학부모</p></div>
+  <div class="card ref"><div class="num">2</div><p data-i="r2">방학 캠프나 진로 특강을 찾는 학교, 지역아동센터, 교육기관 담당자</p></div>
+  <div class="card ref"><div class="num">3</div><p data-i="r3">임직원 자녀 프로그램이나 의미 있는 기부처를 찾는 기업 · 단체 담당자</p></div>
+</section>
+
+<section id="gallery">
+  <div class="eyebrow">GALLERY</div>
+  <h2 data-i="galTitle">최지은 코치</h2>
+  <div class="gallery">
+    <div class="track">
+      <div class="slide"><img src="img/camp.jpg" alt="캠프 현장"><div class="cap" data-i="g0">캠프 현장 · 학생들과 함께</div></div>
+      <div class="slide"><img src="img/profile-full.jpg" alt="최지은" style="object-position:50% 25%"><div class="cap" data-i="g1">희망랜드마크 대표 최지은</div></div>
+      <div class="slide"><img src="img/profile-pen.jpg" alt="최지은" style="object-position:50% 20%"><div class="cap" data-i="g2">질문으로 아이의 가능성을 엽니다</div></div>
+    </div>
+    <button class="nav prev" aria-label="이전">‹</button>
+    <button class="nav next" aria-label="다음">›</button>
+  </div>
+  <div class="dots"></div>
+</section>
+
+<section id="career">
+  <div class="eyebrow">CAREER</div>
+  <h2 data-i="carTitle">경력 및 활동</h2>
+  <div class="tl">
+    <div><small data-i="t1s">현재</small><h3 data-i="t1t">희망랜드마크 대표</h3><p data-i="t1d">사단법인 희망커넥트 부설기관. 어린이·청소년 꿈찾기 포럼 운영.</p></div>
+    <div><small data-i="t2s">현재</small><h3 data-i="t2t">최지은 진로입시코칭 · 진로·학습·입시 컨설턴트</h3><p data-i="t2d">20년 넘게 학생·학부모 코칭. 수시 전문.</p></div>
+    <div><small data-i="t3s">캠프</small><h3 data-i="t3t">교육 캠프 기획·진행</h3><p data-i="t3d">중앙일보 공부의신 캠프, 청소년경제포럼 기자캠프, CJ 진로캠프 외 다수.</p></div>
+    <div><small data-i="t4s">미디어</small><h3 data-i="t4t">기자 · 다큐멘터리 제작</h3><p data-i="t4d">신문사·잡지사 기자. 다큐멘터리 제작, EBS 방영.</p></div>
+    <div><small data-i="t5s">저서 · 활동</small><h3 data-i="t5t">에세이 『어쩌다, 혼자 여행』 출간</h3><p data-i="t5d">네이버 블로그 '대학입시전문 코치' 운영 (이웃 4,000명+).</p></div>
+    <div><small>BNI</small><h3 data-i="t6t">BNI 대전 리더챕터 멤버</h3><p data-i="t6d">좋은 분을 소개받고, 좋은 분을 소개합니다.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">CONTACT</div>
+  <h2 data-i="ctTitle">연락하기</h2>
+  <div class="contact">
+    <a href="tel:01054440088"><span class="ic">📞</span><span><small data-i="ctPhone">전화</small><strong>010-5444-0088</strong></span></a>
+    <a href="mailto:diamond31@naver.com"><span class="ic">✉️</span><span><small>Email</small><strong>diamond31@naver.com</strong></span></a>
+    <a href="https://blog.naver.com/diamond31" target="_blank" rel="noopener"><span class="ic">📝</span><span><small data-i="ctBlog">네이버 블로그</small><strong>blog.naver.com/diamond31</strong></span></a>
+    <div class="c"><span class="ic">📷</span><span><small>Instagram</small><strong>Ji-eun Choi</strong></span></div>
+    <a href="http://hopeconnect.kr/?act=board&bbs_code=sub5_1" target="_blank" rel="noopener"><span class="ic">💛</span><span><small data-i="ctHope">희망커넥트</small><strong>hopeconnect.kr</strong></span></a>
+  </div>
+  <div class="actions">
+    <button class="btn primary" id="saveContact" data-i="save">📇 연락처 저장</button>
+    <button class="btn ghost" id="share" data-i="share">📤 공유하기</button>
+  </div>
+</section>
+
+<footer>
+  <b data-i="foot">희망랜드마크 · 최지은</b>
+  <span data-i="foot2">사단법인 희망커넥트 부설기관</span>
+</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const EN = {
+  tag:"Hope Connect affiliate · Hope Landmark",
+  name:"Choi Ji-eun",
+  role:"CEO · Career, Learning & Admissions Consultant",
+  lead:"Helping children discover the potential within themselves<br>by clearing away what holds them back.",
+  call:"📞 Call",
+  seeProgram:"See programs",
+  aboutTitle:"Every child already has the answer.<br>They just haven't found it yet.",
+  about1:"I met people as a newspaper and magazine journalist, and produced a documentary aired on EBS. For over 20 years, I have worked with countless students and parents in career, learning and college admissions.",
+  about2:"Along the way I became certain of one thing: what changes a child is not more information, but the experience of discovering \"I can do this\" for themselves. Hope Landmark creates the space for that discovery.",
+  c1:"📰 Journalist", c2:"🎬 Documentary maker", c4:"🎓 Admissions consultant", c5:"⛺ Camp director", c6:"✍️ Author",
+  forumTitle:"Hope Landmark Dream Forum",
+  forumFor:"For children & teens",
+  forumDesc:"This is not a class that teaches answers. Through conversation, questions and activities, children look at who they are today and discover their own dreams and possibilities.",
+  s1t:"Check where I am now", s1d:"Feelings, habits, relationships, study. We look together at where the child stands today.",
+  s2t:"Find what blocks growth", s2d:"\"I'm just not good at it.\" \"I can't anyway.\" Children notice the thoughts and patterns holding them back.",
+  s3t:"Let the blocks fade away", s3d:"What we notice loses its power. In its place, the child's real dreams and possibilities take root.",
+  joinTitle:"Join through giving",
+  joinDesc:"Hope Landmark is an affiliated institute of Hope Connect, a non-profit organization. Children of families who donate to Hope Connect can join the Dream Forum at a low cost.",
+  f1:"Donate to Hope Connect", f2:"Sign up your child", f3:"Join the Dream Forum",
+  amountLabel:"Donation amount is up to you",
+  a1:"₩30,000", a2:"₩50,000", a3:"Any amount",
+  joinBtn:"Visit Hope Connect →",
+  conTitle:"Choi Ji-eun Career & Admissions Coaching<br><small style=\"font-size:15px;color:var(--sub);font-family:'Noto Sans KR'\">1:1 coaching for career, learning & admissions</small>",
+  conDesc:"Read reality, then realign direction. Not unrealistic goals, and not closing doors based on grades alone, but a path the student can actually walk.",
+  l1:"Diagnosis of personality and current study status", l2:"Long-term career and academic planning", l3:"Review of school records and activities",
+  l4:"University, track selection and early admission strategy", l5:"Self-directed study habits and follow-through", l6:"Parent consultation and admissions information",
+  b1:"20+ years of experience", b2:"Many admits to SNU, Yonsei, Korea Univ.", b3:"Early admission specialist",
+  whyTitle:"Why work with me",
+  w1t:"① A coach who has lived many lives", w1d:"Journalist, documentary producer, author, camp director. I show children first-hand that there are many paths in life.",
+  w2t:"② Proven in countless camps", w2d:"JoongAng Ilbo \"God of Study\" camp, Youth Economic Forum reporter camp, CJ career camp and many more. Real time with real kids.",
+  w3t:"③ I design my own programs", w3d:"I don't deliver someone else's lesson plan. I create and refine programs by watching how children respond.",
+  refTitle:"Who to refer to me",
+  r1:"Parents worried about their child's career path, self-esteem or study habits",
+  r2:"Schools, community child centers and education institutions looking for camps or career talks",
+  r3:"Companies and organizations seeking programs for employees' children or a meaningful place to donate",
+  galTitle:"Coach Choi Ji-eun",
+  g0:"At a camp with students", g1:"Choi Ji-eun, CEO of Hope Landmark", g2:"Opening possibilities through questions",
+  carTitle:"Career & activities",
+  t1s:"NOW", t1t:"CEO, Hope Landmark", t1d:"Affiliated institute of Hope Connect. Runs the Dream Forum for children and teens.",
+  t2s:"NOW", t2t:"Choi Ji-eun Career & Admissions Coaching", t2d:"Coaching students and parents for over 20 years. Early admission specialist.",
+  t3s:"CAMPS", t3t:"Education camp planning & facilitation", t3d:"JoongAng Ilbo \"God of Study\" camp, Youth Economic Forum reporter camp, CJ career camp and more.",
+  t4s:"MEDIA", t4t:"Journalist · Documentary producer", t4d:"Newspaper and magazine journalist. Documentary aired on EBS.",
+  t5s:"BOOK · MORE", t5t:"Published the essay \"A Trip Alone, by Chance\"", t5d:"Runs a Naver blog on college admissions (4,000+ followers).",
+  t6t:"Member, BNI Daejeon Leader Chapter", t6d:"Happy to be referred, happy to refer.",
+  ctTitle:"Contact", ctPhone:"Phone", ctBlog:"Naver Blog", ctHope:"Hope Connect",
+  save:"📇 Save contact", share:"📤 Share",
+  foot:"Hope Landmark · Choi Ji-eun", foot2:"Affiliated institute of Hope Connect"
+};
+const KO = {};
+document.querySelectorAll('[data-i]').forEach(el => KO[el.dataset.i] = el.innerHTML);
+const MSG = {
+  ko:{copied:"링크를 복사했어요", title:"최지은 | 희망랜드마크"},
+  en:{copied:"Link copied", title:"Choi Ji-eun | Hope Landmark"}
+};
+let lang = 'ko';
+function setLang(l){
+  lang = l;
+  const dict = l === 'en' ? EN : KO;
+  document.querySelectorAll('[data-i]').forEach(el => { if (dict[el.dataset.i] != null) el.innerHTML = dict[el.dataset.i]; });
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === l));
+  document.documentElement.lang = l;
+  document.title = MSG[l].title;
+  try { localStorage.setItem('lang', l); } catch(e) {}
+}
+document.querySelectorAll('.lang button').forEach(b => b.onclick = () => setLang(b.dataset.lang));
+try { const s = localStorage.getItem('lang'); if (s && s !== 'ko') setLang(s); } catch(e) {}
+
+// gallery
+const track = document.querySelector('.track'), slides = track.children, dots = document.querySelector('.dots');
+let idx = 0;
+for (let i = 0; i < slides.length; i++) { const d = document.createElement('i'); d.onclick = () => go(i); dots.appendChild(d); }
+function go(i){ idx = (i + slides.length) % slides.length; track.style.transform = `translateX(-${idx*100}%)`; [...dots.children].forEach((d,j) => d.classList.toggle('on', j === idx)); }
+document.querySelector('.prev').onclick = () => go(idx - 1);
+document.querySelector('.next').onclick = () => go(idx + 1);
+let sx = null;
+track.addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+track.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1)); sx = null; });
+go(0);
+
+// toast
+function toast(m){ const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1800); }
+
+// vCard
+document.getElementById('saveContact').onclick = () => {
+  const v = ['BEGIN:VCARD','VERSION:3.0','N:최;지은;;;','FN:최지은','ORG:희망랜드마크','TITLE:대표 · 진로·학습·입시 컨설턴트',
+    'TEL;TYPE=CELL:010-5444-0088','EMAIL:diamond31@naver.com','URL:'+location.href,'URL:https://blog.naver.com/diamond31',
+    'NOTE:희망커넥트 부설 희망랜드마크 · BNI 대전 리더챕터','END:VCARD'].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([v], {type:'text/vcard;charset=utf-8'}));
+  a.download = 'choi-jieun.vcf'; a.click();
+};
+
+// share
+document.getElementById('share').onclick = async () => {
+  const data = {title: MSG[lang].title, url: location.href};
+  if (navigator.share) { try { await navigator.share(data); } catch(e) {} return; }
+  try { await navigator.clipboard.writeText(location.href); toast(MSG[lang].copied); } catch(e) {}
+};
+</script>
+</body>
+</html>
