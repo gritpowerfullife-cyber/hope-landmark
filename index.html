@@ -264,7 +264,7 @@ footer b{display:block;color:var(--ink);font-size:14px;margin-bottom:4px}
     <a href="http://hopeconnect.kr/?act=board&bbs_code=sub5_1" target="_blank" rel="noopener"><span class="ic">💛</span><span><small data-i="ctHope">희망커넥트</small><strong>hopeconnect.kr</strong></span></a>
   </div>
   <div class="actions">
-    <button class="btn primary" id="saveContact" data-i="save">📇 연락처 저장</button>
+    <a class="btn primary" href="contact.vcf" data-i="save">📇 연락처 저장</a>
     <button class="btn ghost" id="share" data-i="share">📤 공유하기</button>
   </div>
 </section>
@@ -360,15 +360,6 @@ go(0);
 // toast
 function toast(m){ const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1800); }
 
-// vCard
-document.getElementById('saveContact').onclick = () => {
-  const v = ['BEGIN:VCARD','VERSION:3.0','N:최;지은;;;','FN:최지은','ORG:희망랜드마크','TITLE:대표 · 진로·학습·입시 컨설턴트',
-    'TEL;TYPE=CELL:010-5444-0088','EMAIL:diamond31@naver.com','URL:'+location.href,'URL:https://blog.naver.com/diamond31',
-    'NOTE:희망커넥트 부설 희망랜드마크 · BNI 대전 리더챕터','END:VCARD'].join('\r\n');
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([v], {type:'text/vcard;charset=utf-8'}));
-  a.download = 'choi-jieun.vcf'; a.click();
-};
 
 // share
 document.getElementById('share').onclick = async () => {
